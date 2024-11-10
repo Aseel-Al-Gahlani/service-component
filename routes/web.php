@@ -23,6 +23,14 @@ Route::get('/login', function () {
     return view('user-management.auth.login');
 })->name('login');
 
+Route::get('/card', function () {
+    return view('admin.pages.cards');
+})->name('card');
+
+Route::get('/table', function () {
+    return view('admin.pages.table');
+})->name('table');
+
 
 Route::get('/lang/{lang}', function ($lang) {
     if (in_array($lang, ['en', 'ar'])) {

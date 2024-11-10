@@ -37,7 +37,7 @@
 
         <div class="form-group">
             {{-- config('service-component.auth.username') --}}
-            <input type="{{ ( 'mobile' == 'mobile' ) ? 'text' : 'email' }}" name="{{ config('service-component.auth.username') }}" class="form-control form-control-lg" placeholder="{{ __('trans.placeholders.username') }}" required>
+            <input type="{{ ( config('service_component.auth.username') == 'mobile' ) ? 'text' : 'email' }}" name="{{ config('service-component.auth.username') }}" class="form-control form-control-lg" placeholder="{{ __('trans.placeholders.username') }}" required>
         </div>
         <div class="form-group">
             <input type="password" name="password" class="form-control form-control-lg" placeholder="{{ __('trans.placeholders.password') }}" required>

@@ -10,11 +10,11 @@ class DynamicButton extends Component
     public $label;
     public $active;
 
-    public function __construct($icon, $label, $active = false)
+    public function __construct($icon, $active = false, $label = 'Button')
     {
+        $this->active = $active;
         $this->icon = $icon;
         $this->label = $label;
-        $this->active = $active;
     }
 
     public function render()
